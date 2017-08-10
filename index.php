@@ -1,6 +1,5 @@
 <?php
 /**
- * Created by PhpStorm.
  * User: yevhen
  * Date: 10.08.17
  * Time: 11:04
@@ -15,7 +14,8 @@ $list = array (
 
 $fp = fopen('files/data.csv', 'w');
 
-foreach ($list as $fields) {
+foreach ($list as $fields)
+{
     fputcsv($fp, $fields);
 }
 
